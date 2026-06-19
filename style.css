@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+}
+
+.container {
+    width: 600px;
+    margin: 25px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.address, .contact, .datetime {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.inputs {
+    display: flex;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.add-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #219150;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.total {
+    text-align: center;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.print-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    background: #1f6fa5;
+}
+
+.thanks {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    body {
+        background: white;
+    }
+    .container {
+        box-shadow: none;
+        width: 100%;
+    }
+}
